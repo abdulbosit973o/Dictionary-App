@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/SPlash">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.gita.dictionary_app.presentation.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_uzbekFragment"
+            app:destination="@id/uzbekFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_savedWords"
+            app:destination="@id/savedWords" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedWords"
+        android:name="uz.gita.dictionary_app.presentation.bookmarks.SavedWords"
+        android:label="SavedWords" />
+    <fragment
+        android:id="@+id/uzbekFragment"
+        android:name="uz.gita.dictionary_app.presentation.UzbekDictionary.UzbekFragment"
+        android:label="UzbekFragment" >
+        <action
+            android:id="@+id/action_uzbekFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_uzbekFragment_to_savedWords"
+            app:destination="@id/savedWords" />
+    </fragment>
+    <fragment
+        android:id="@+id/SPlash"
+        android:name="uz.gita.dictionary_app.presentation.Splash"
+        android:label="SPlash"
+        >
+        <action
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/SPlash"
+            android:id="@+id/action_SPlash_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
