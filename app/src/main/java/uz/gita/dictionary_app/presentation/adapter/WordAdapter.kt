@@ -76,7 +76,10 @@ class WordAdapter : Adapter<WordAdapter.WordViewHolder>() {
                     )
                 }
 
-                notifyDataSetChanged()
+                if (item.is_favourite == 0) save.setImageResource(R.drawable.bookmark)
+                else save.setImageResource(R.drawable.bookmark_unchecked)
+
+//                notifyDataSetChanged()
             }
 
 

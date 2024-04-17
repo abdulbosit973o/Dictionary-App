@@ -28,7 +28,7 @@ class HomePresenter(var view: HomeContract.View) : HomeContract.Presenter {
     override fun updateData(it: WordData) {
         executors.execute {
             model.updateData(it)
-            loadCursor()
+//            loadCursor()
         }
 
     }

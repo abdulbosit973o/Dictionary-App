@@ -52,6 +52,9 @@ class HomeFragment : Fragment(R.layout.fragment_home_nav), HomeContract.View {
         adapter = WordAdapter()
         dialog = Dialog(requireContext())
         binding.navView.setCheckedItem(R.id.nav_home)
+        currentQuery?.let {
+            //binding.appBarMain.searchView.query = currentQuery
+        }
 
 
         adapter.setFavouriteTouchListener {
