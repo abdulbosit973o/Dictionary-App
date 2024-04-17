@@ -4,7 +4,7 @@
     <color name="m3_ref_palette_primary20">#0d2b5c</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6ffffff</color>
-    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_200">#D0D0D0</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>

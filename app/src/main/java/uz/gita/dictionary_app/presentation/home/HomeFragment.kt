@@ -44,7 +44,7 @@ class HomeFragment : Fragment(R.layout.fragment_home_nav), HomeContract.View {
     private lateinit var dialog : Dialog
 
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val shared = MySharedPref
         shared.saveOpenScreen(0)
